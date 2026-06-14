@@ -1,0 +1,40 @@
+/* src/styles/variables.css */
+:root {
+  /* Light Mode (Base) */
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  
+  --accent-blue: #2563eb;
+  --accent-violet: #7c3aed;
+  --neon-glow: rgba(37, 99, 235, 0.2);
+
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.5);
+  --glass-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+
+  --font-sans: 'Inter', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+}
+
+[data-theme='dark'] {
+  /* Dark Mode */
+  --bg-primary: #020617; /* Deep Navy / Black */
+  --bg-secondary: #0f172a;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+
+  --accent-blue: #38bdf8;
+  --accent-violet: #8b5cf6;
+  --neon-glow: rgba(56, 189, 248, 0.4);
+
+  --glass-bg: rgba(15, 23, 42, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,354 @@
+{
+  "patients": [
+    {
+      "id": "P001",
+      "name": "Margaret Collins",
+      "age": 74,
+      "gender": "Female",
+      "diagnosisStage": "Mild",
+      "diagnosedYear": 2022,
+      "caretakerId": "C001",
+      "avatar": "MC",
+      "bloodType": "A+",
+      "medications": ["Donepezil 10mg", "Memantine 20mg"],
+      "emergencyContact": {
+        "name": "Robert Collins",
+        "relation": "Son",
+        "phone": "+1-555-0101"
+      }
+    },
+    {
+      "id": "P002",
+      "name": "Harold Jensen",
+      "age": 81,
+      "gender": "Male",
+      "diagnosisStage": "Moderate",
+      "diagnosedYear": 2020,
+      "caretakerId": "C002",
+      "avatar": "HJ",
+      "bloodType": "O-",
+      "medications": ["Donepezil 5mg", "Rivastigmine 9.5mg"],
+      "emergencyContact": {
+        "name": "Linda Jensen",
+        "relation": "Daughter",
+        "phone": "+1-555-0202"
+      }
+    },
+    {
+      "id": "P003",
+      "name": "Dorothy Patel",
+      "age": 68,
+      "gender": "Female",
+      "diagnosisStage": "Early",
+      "diagnosedYear": 2024,
+      "caretakerId": "C001",
+      "avatar": "DP",
+      "bloodType": "B+",
+      "medications": ["Galantamine 16mg"],
+      "emergencyContact": {
+        "name": "Anita Patel",
+        "relation": "Daughter",
+        "phone": "+1-555-0303"
+      }
+    }
+  ],
+
+  "cognitiveTestScores": [
+    {
+      "patientId": "P001",
+      "tests": [
+        {
+          "date": "2026-04-10",
+          "testType": "MMSE",
+          "score": 22,
+          "maxScore": 30,
+          "category": "Mild Impairment",
+          "domains": {
+            "memory": 7,
+            "attention": 6,
+            "language": 5,
+            "orientation": 4
+          }
+        },
+        {
+          "date": "2026-03-10",
+          "testType": "MMSE",
+          "score": 21,
+          "maxScore": 30,
+          "category": "Mild Impairment",
+          "domains": {
+            "memory": 6,
+            "attention": 6,
+            "language": 5,
+            "orientation": 4
+          }
+        },
+        {
+          "date": "2026-02-10",
+          "testType": "MMSE",
+          "score": 20,
+          "maxScore": 30,
+          "category": "Mild Impairment",
+          "domains": {
+            "memory": 6,
+            "attention": 5,
+            "language": 5,
+            "orientation": 4
+          }
+        },
+        {
+          "date": "2026-04-12",
+          "testType": "MoCA",
+          "score": 19,
+          "maxScore": 30,
+          "category": "Mild Cognitive Impairment",
+          "domains": {
+            "visuospatial": 3,
+            "naming": 2,
+            "memory": 3,
+            "attention": 4,
+            "language": 3,
+            "abstraction": 2,
+            "orientation": 2
+          }
+        }
+      ]
+    },
+    {
+      "patientId": "P002",
+      "tests": [
+        {
+          "date": "2026-04-08",
+          "testType": "MMSE",
+          "score": 14,
+          "maxScore": 30,
+          "category": "Moderate Impairment",
+          "domains": {
+            "memory": 3,
+            "attention": 4,
+            "language": 3,
+            "orientation": 4
+          }
+        },
+        {
+          "date": "2026-03-08",
+          "testType": "MMSE",
+          "score": 15,
+          "maxScore": 30,
+          "category": "Moderate Impairment",
+          "domains": {
+            "memory": 4,
+            "attention": 4,
+            "language": 3,
+            "orientation": 4
+          }
+        },
+        {
+          "date": "2026-04-09",
+          "testType": "MoCA",
+          "score": 12,
+          "maxScore": 30,
+          "category": "Moderate Cognitive Impairment",
+          "domains": {
+            "visuospatial": 1,
+            "naming": 1,
+            "memory": 1,
+            "attention": 3,
+            "language": 2,
+            "abstraction": 1,
+            "orientation": 3
+          }
+        }
+      ]
+    },
+    {
+      "patientId": "P003",
+      "tests": [
+        {
+          "date": "2026-04-14",
+          "testType": "MMSE",
+          "score": 27,
+          "maxScore": 30,
+          "category": "Normal",
+          "domains": {
+            "memory": 9,
+            "attention": 7,
+            "language": 6,
+            "orientation": 5
+          }
+        },
+        {
+          "date": "2026-03-14",
+          "testType": "MMSE",
+          "score": 26,
+          "maxScore": 30,
+          "category": "Normal",
+          "domains": {
+            "memory": 8,
+            "attention": 7,
+            "language": 6,
+            "orientation": 5
+          }
+        }
+      ]
+    }
+  ],
+
+  "dailyRoutineLogs": [
+    {
+      "patientId": "P001",
+      "logs": [
+        {
+          "date": "2026-04-16",
+          "routines": [
+            { "time": "07:00", "activity": "Wake up & Morning Hygiene", "completed": true, "mood": "Good" },
+            { "time": "07:30", "activity": "Breakfast", "completed": true, "mood": "Good" },
+            { "time": "08:00", "activity": "Morning Medication", "completed": true, "mood": "Neutral" },
+            { "time": "10:00", "activity": "Memory Exercise (Puzzles)", "completed": true, "mood": "Happy" },
+            { "time": "12:00", "activity": "Lunch", "completed": true, "mood": "Good" },
+            { "time": "14:00", "activity": "Afternoon Walk", "completed": false, "mood": "Tired" },
+            { "time": "16:00", "activity": "Reading / TV Time", "completed": true, "mood": "Neutral" },
+            { "time": "18:00", "activity": "Dinner", "completed": true, "mood": "Good" },
+            { "time": "19:00", "activity": "Evening Medication", "completed": true, "mood": "Good" },
+            { "time": "21:00", "activity": "Bedtime Routine", "completed": true, "mood": "Calm" }
+          ],
+          "overallMood": "Good",
+          "completionRate": 90
+        },
+        {
+          "date": "2026-04-15",
+          "routines": [
+            { "time": "07:00", "activity": "Wake up & Morning Hygiene", "completed": true, "mood": "Good" },
+            { "time": "07:30", "activity": "Breakfast", "completed": true, "mood": "Good" },
+            { "time": "08:00", "activity": "Morning Medication", "completed": false, "mood": "Confused" },
+            { "time": "10:00", "activity": "Memory Exercise (Puzzles)", "completed": false, "mood": "Anxious" },
+            { "time": "12:00", "activity": "Lunch", "completed": true, "mood": "Neutral" },
+            { "time": "14:00", "activity": "Afternoon Walk", "completed": true, "mood": "Good" },
+            { "time": "16:00", "activity": "Reading / TV Time", "completed": true, "mood": "Calm" },
+            { "time": "18:00", "activity": "Dinner", "completed": true, "mood": "Good" },
+            { "time": "19:00", "activity": "Evening Medication", "completed": true, "mood": "Good" },
+            { "time": "21:00", "activity": "Bedtime Routine", "completed": true, "mood": "Calm" }
+          ],
+          "overallMood": "Neutral",
+          "completionRate": 80
+        }
+      ]
+    },
+    {
+      "patientId": "P002",
+      "logs": [
+        {
+          "date": "2026-04-16",
+          "routines": [
+            { "time": "08:00", "activity": "Wake up & Morning Hygiene", "completed": true, "mood": "Confused" },
+            { "time": "08:30", "activity": "Breakfast", "completed": true, "mood": "Neutral" },
+            { "time": "09:00", "activity": "Morning Medication", "completed": true, "mood": "Neutral" },
+            { "time": "11:00", "activity": "Cognitive Therapy Session", "completed": true, "mood": "Good" },
+            { "time": "13:00", "activity": "Lunch", "completed": true, "mood": "Good" },
+            { "time": "15:00", "activity": "Nap Time", "completed": true, "mood": "Calm" },
+            { "time": "17:00", "activity": "Family Visit", "completed": true, "mood": "Happy" },
+            { "time": "19:00", "activity": "Dinner", "completed": true, "mood": "Good" },
+            { "time": "20:00", "activity": "Evening Medication", "completed": false, "mood": "Tired" },
+            { "time": "21:30", "activity": "Bedtime Routine", "completed": true, "mood": "Calm" }
+          ],
+          "overallMood": "Neutral",
+          "completionRate": 90
+        }
+      ]
+    },
+    {
+      "patientId": "P003",
+      "logs": [
+        {
+          "date": "2026-04-16",
+          "routines": [
+            { "time": "06:30", "activity": "Wake up & Morning Hygiene", "completed": true, "mood": "Good" },
+            { "time": "07:00", "activity": "Breakfast", "completed": true, "mood": "Good" },
+            { "time": "07:30", "activity": "Morning Medication", "completed": true, "mood": "Good" },
+            { "time": "09:00", "activity": "Yoga / Light Exercise", "completed": true, "mood": "Happy" },
+            { "time": "12:00", "activity": "Lunch", "completed": true, "mood": "Good" },
+            { "time": "14:00", "activity": "Cognitive Games (Apps)", "completed": true, "mood": "Happy" },
+            { "time": "18:00", "activity": "Dinner", "completed": true, "mood": "Good" },
+            { "time": "20:00", "activity": "Evening Medication", "completed": true, "mood": "Good" },
+            { "time": "22:00", "activity": "Bedtime Routine", "completed": true, "mood": "Calm" }
+          ],
+          "overallMood": "Happy",
+          "completionRate": 100
+        }
+      ]
+    }
+  ],
+
+  "caretakerNotes": [
+    {
+      "caretakerId": "C001",
+      "caretakerName": "Sarah Thompson",
+      "role": "Primary Caretaker",
+      "notes": [
+        {
+          "patientId": "P001",
+          "date": "2026-04-16",
+          "note": "Margaret had a good day overall. She recognized me and her son immediately. Skipped the afternoon walk due to mild fatigue. Memory exercises went well — completed the word puzzle in 12 minutes (personal best this week).",
+          "priority": "Normal",
+          "tags": ["memory", "fatigue", "exercise"]
+        },
+        {
+          "patientId": "P001",
+          "date": "2026-04-15",
+          "note": "Difficult morning — Margaret forgot to take her medication and became anxious when reminded. Showed signs of confusion about the day of the week. Afternoon improved significantly after the walk.",
+          "priority": "High",
+          "tags": ["medication", "confusion", "anxiety"]
+        },
+        {
+          "patientId": "P003",
+          "date": "2026-04-16",
+          "note": "Dorothy is progressing very well. Completed all daily routines independently. Scored high on the Lumosity cognitive game today. Family reports she's been more social and engaged this week.",
+          "priority": "Normal",
+          "tags": ["positive", "independent", "social"]
+        }
+      ]
+    },
+    {
+      "caretakerId": "C002",
+      "caretakerName": "James Rivera",
+      "role": "Specialist Nurse",
+      "notes": [
+        {
+          "patientId": "P002",
+          "date": "2026-04-16",
+          "note": "Harold enjoyed the family visit this afternoon — displayed increased alertness and smiling. Refused evening medication initially; required 20 min of patient encouragement. Consider adjusting medication schedule.",
+          "priority": "High",
+          "tags": ["medication-refusal", "family", "schedule-adjustment"]
+        },
+        {
+          "patientId": "P002",
+          "date": "2026-04-14",
+          "note": "Harold had an episode of sundowning around 5pm — increased agitation and confusion. Managed with calming music therapy. Will document for neurologist review at next appointment.",
+          "priority": "Critical",
+          "tags": ["sundowning", "agitation", "music-therapy", "neurologist"]
+        }
+      ]
+    }
+  ],
+
+  "caretakers": [
+    {
+      "id": "C001",
+      "name": "Sarah Thompson",
+      "role": "Primary Caretaker",
+      "phone": "+1-555-1001",
+      "email": "sarah.t@memoracare.com",
+      "assignedPatients": ["P001", "P003"],
+      "shift": "Day (7AM - 7PM)"
+    },
+    {
+      "id": "C002",
+      "name": "James Rivera",
+      "role": "Specialist Nurse",
+      "phone": "+1-555-1002",
+      "email": "james.r@memoracare.com",
+      "assignedPatients": ["P002"],
+      "shift": "Full-time"
+    }
+  ]
+}
